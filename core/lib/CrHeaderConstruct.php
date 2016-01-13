@@ -16,7 +16,7 @@ class CrHeaderConstruct{
 	/*конструктор - создает экземпляр класса
 	вход -=название_сайта=- (строка)
 	 */
-	function CrHeaderConstruct($sn){ 
+	public function __construct($sn){ 
 	   $this->begHead = "<!-- This head is construct on CrHeaderConstruct -->"." "; //в коментариях пишем, кто написал заголовок (для того, чтобы было проще отслеживать "нечестные" модули и атаки)
 	   $this->siteName=$sn;//запоминаем название сайта
 	   $this->endHead="<!-- end head of the $sn -->";//создаем конечный комментарий заголовка
@@ -25,53 +25,53 @@ class CrHeaderConstruct{
 	имеется возможнность подключить хоть сколько ктт.
 	вход -=путь_до_ктт=- (строка)
 	 */
-	function SetCss($pathToCSS){
+	public function SetCss($pathToCSS){
 		$this->css=$this->css." <link rel='stylesheet' type='text/css' href=".$pathToCSS."'/> ";
 	}
 	/* SetIcon - Подключает иконку.
 	вход -=путь_до_иконки=- (строка)
 	 */
-	function SetIcon($pathToIcon){
+	public function SetIcon($pathToIcon){
 		$this->icon="<link rel='icon' href=".$pathToIcon." type='image/x-icon' />";
 	}
 	/* SetTitle - Задаёт заголловок страницы.
 	вход -=заголовок=- (строка)
 	 */
-	function SetTitle($title){
+	public function SetTitle($title){
 		$this->title="<title>".$title.". ".$this->siteName."</title>";
 	}
 	/* SetCharseft - Задаёт кодировку страницы.
 	вход -=кодировка=- (строка)
 	 */
-	function SetCharseft($chrsft){
+	public function SetCharseft($chrsft){
 		$this->charseft=" <meta http-equiv='content-type' content='text/html; charset=".$chrsft."' /> ";
 	}
 	/* AddScriptFromFile - Подключает файл скрипта.
 	имеется возможнность подключить хоть сколько скриптов.
 	вход -=путь_до_скрипта=- (строка)
 	 */
-	function AddScriptFromFile($PathToJS){
+	public function AddScriptFromFile($PathToJS){
 		$this->scripts=$this->scripts.' <script type="text/javascript" src="'.$PathToJS.'"></script> ';
 	}
 	/* AddScriptFromFile - Подключае скрипта.
 	имеется возможнность подключить хоть сколько скриптов.
 	вход -=код_скрипта=- (строка)
 	 */
-	function AddScript($JsCode){
+	public function AddScript($JsCode){
 		$this->scripts=$this->scripts.' <script type="text/javascript>'.$JsCode.'</script>';
 	}
  	/* AddMeta - добавляет мета тег
 	имеется возможнность подключить хоть сколько мета тегов.
 	вход -=имя_тега=- (строка); -=значение=- (строка)
 	 */
-	function AddMeta($MName,$MContent){
+	public function AddMeta($MName,$MContent){
 		$this->meta=$this->meta.' <meta name="'.$MName.'" content="'.$MContent.'" /> ';
 	}
 	/* render - склеивает страницу и возвращает заголовок
 	вход -------
 	выход -=сформированный заголовок=-
 	 */	
-	function render(){
+	public function render(){
 		$this->head=$this->begHead."   ".$this->meta."  ".$this->scripts."  ".$this->charseft."  ".$this->css."  ".$this->icon."  ".$this->title."  ".$this->endHead;
 		return $this->head;
 	}
