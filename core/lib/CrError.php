@@ -48,6 +48,7 @@ class ErrorSupervisor
 					$date."\r\n</date>\r\n<description>\r\n EROOR: '".$error['message']."' in file '".$error['file'].
 					"' on line: ".$error['line']."\r\n</description>\r\n</Error>";
 					fwrite($fp,$log);
+					$CoreSystemEroorViewer->error500();
 				}
 				// - вернуть заголовок 500
 				// - вернуть после заголовка данные для пользователя

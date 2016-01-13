@@ -55,3 +55,87 @@ CRITIC
  EROOR: 'syntax error, unexpected '[', expecting ',' or ';'' in file 'C:\OpenServer\domains\testmasteke.leo\core\lib\CrEngine.php' on line: 10
 </description>
 </Error>
+<Error> 
+<title>
+<rang>
+CRITIC
+</rang>
+<Type>
+4
+</Type> 
+<date>[2016.01.8] 10:58:34
+</date>
+<description>
+ EROOR: 'syntax error, unexpected T_VARIABLE, expecting '('' in file 'C:\OpenServer\domains\testmasteke.leo\core\global.php' on line: 48
+</description>
+</Error>
+<Error> 
+<title>
+<rang>
+CRITIC
+</rang>
+<Type>
+4
+</Type> 
+<date>[2016.01.8] 10:58:53
+</date>
+<description>
+ EROOR: 'syntax error, unexpected T_VARIABLE, expecting '('' in file 'C:\OpenServer\domains\testmasteke.leo\core\global.php' on line: 48
+</description>
+</Error>
+<Error> 
+<title>
+<rang>
+CRITIC
+</rang>
+<Type>
+4
+</Type> 
+<date>[2016.01.8] 16:15:54
+</date>
+<description>
+ EROOR: 'syntax error, unexpected T_VARIABLE, expecting '('' in file 'C:\OpenServer\domains\testmasteke.leo\core\global.php' on line: 48
+</description>
+</Error>
+<Error> 
+<title>
+<rang>
+CRITIC
+</rang>
+<Type>
+1
+</Type> 
+<date>[2016.01.12] 11:58:30
+</date>
+<description>
+ EROOR: 'Call to undefined function  run()' in file 'C:\OpenServer\domains\testmasteke.leo\core\global.php' on line: 55
+</description>
+</Error>
+<Error> 
+<title>
+<rang>
+CRITIC
+</rang>
+<Type>
+64
+</Type> 
+<date>[2016.01.12] 12:18:03
+</date>
+<description>
+ EROOR: 'Cannot redeclare CrEngine::$Start_Parametrs' in file 'C:\OpenServer\domains\testmasteke.leo\core\lib\CrEngine.php' on line: 12
+</description>
+</Error>
+<Error> 
+<title>
+<rang>
+CRITIC
+</rang>
+<Type>
+4
+</Type> 
+<date>[2016.01.13] 12:51:24
+</date>
+<description>
+ EROOR: 'syntax error, unexpected T_VARIABLE' in file 'C:\OpenServer\domains\testmasteke.leo\core\global.php' on line: 54
+</description>
+</Error>
